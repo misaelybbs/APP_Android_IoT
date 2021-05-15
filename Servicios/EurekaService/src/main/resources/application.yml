@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: eureka-service
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    server:
+      waitTimeinMsWhenSyncEmpty: 0
+
+zuul:
+  prefix: /api
+  routes:
+    register-service:
+      path: /register/**
+      url: http://localhost:9090
+    login-service:
+      path: /login/**
+      url: http://localhost:9091
+    checkuser-service:
+      path: /checkuser/**
+      url: http://localhost:9092
+    recover-service:
+      path: /recover/**
+      url: http://localhost:9093
+    status-device-service:
+      path: /status-device-service/**
+      url: http://localhost:9094
+    user-service:
+      path: /user-service/**
+      url: http://localhost:9095
+    sensor-service:
+      path: /sensor-service/**
+      url: http://localhost:9096
+    rol-service:
+      path: /rol-service/**
+      url: http://localhost:9097
+    device-service:
+      path: /device-service/**
+      url: http://localhost:9098
+    action-service:
+      path: /user-service/**
+      url: http://localhost:9099
+
+
+
+
