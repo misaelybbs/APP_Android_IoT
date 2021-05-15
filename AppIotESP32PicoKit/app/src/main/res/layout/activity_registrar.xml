@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/fondomorado"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".Registrar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/imageViewRegistrarLogo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:contentDescription="@string/todo"
+            tools:srcCompat="@drawable/titulo" />
+
+        <TextView
+            android:id="@+id/textViewRegistrarTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="@string/strRegistrar"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/txtRegistrarNickUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="8"
+            android:autofillHints=""
+            android:background="@drawable/edt_style"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="@string/strNickname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtRegistrarPassword"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="8"
+            android:background="@drawable/edt_style"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="@string/strPassword"
+            android:inputType="textPassword"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/txtRegistrarUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="8"
+            android:autofillHints=""
+            android:background="@drawable/edt_style"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtRegistrarApellido"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="8"
+            android:autofillHints=""
+            android:background="@drawable/edt_style"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Apellido"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/textViewRegistrarTipoCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/strSeleccione_el_tipo_de_proyecto"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/simpleRadioButtonRegistrarAgricultura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strAgricultura" />
+
+            <RadioButton
+                android:id="@+id/simpleRadioButtonRegistrarCasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strHogar" />
+
+            <RadioButton
+                android:id="@+id/simpleRadioButtonRegistrarAmbas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strAgriculturaHogar" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/txtRegistrarActivo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="8"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:inputType="textWebEditText"
+            android:text="1"
+            android:visibility="gone"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/txtRegistrarCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="8"
+            android:autofillHints=""
+            android:background="@drawable/edt_style"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="@string/strEmail"
+            android:inputType="textWebEmailAddress" />
+
+        <RadioGroup
+            android:layout_width="381dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/simpleRadioButtonRegistrarFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Femenino" />
+
+            <RadioButton
+                android:id="@+id/simpleRadioButtonRegistrarMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculino" />
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/txtRegistrarIdUser"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="8"
+            android:autofillHints=""
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:inputType="textWebEditText"
+            android:visibility="gone"
+            tools:text="0" />
+
+        <Button
+            android:id="@+id/buttonRegistrarRegistrar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaRegistro"
+            android:text="@string/strRegistrar" />
+
+        <Button
+            android:id="@+id/buttonRegistrarCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaLogin"
+            android:text="@string/strCancelar" />
+    </LinearLayout>
+</ScrollView>

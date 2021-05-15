@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondomorado"
+    tools:context=".AGlobalLuces">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAGlobalLuces"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#d9c1fd"
+        android:backgroundTint="#d9c1fd"
+        android:orientation="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutAGlobalLuces"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/btn_style">
+
+            <TextView
+                android:id="@+id/textViewAGlobalLuces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="@string/luces_de_cultivo"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/textViewAGlobalLucesUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAGlobalLuces"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="6dp"
+                android:text="@string/strUsuario"
+                android:textColor="@color/colorNegro"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageViewAGlobalLucesUsuario"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/user" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewAGlobalLucesControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/strControl_de_luces"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switchAGlobalLucesControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/strControl_de_luces"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!--
+                <TextView
+                    android:id="@+id/textViewAGlobalTemperaturaTituloControlIdeal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/strTemperatura_ideal"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                        <EditText
+                            android:id="@+id/editTextAGlobalTemperaturaDatoControlIdeal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="50dp"
+                            android:autofillHints=""
+                            android:ems="10"
+                            android:hint="@string/strIntroduzca_una_temperatura_ideal"
+                            android:inputType="textPersonName"
+                            android:textAlignment="textEnd"
+                            android:textStyle="bold" />
+                -->
+
+
+        <WebView
+            android:id="@+id/webViewAGlobalLuces"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="invisible"
+            tools:ignore="WebViewLayout" />
+
+
+    <Button
+            android:id="@+id/buttonAGlobalLucesAtras"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaAGlobal"
+            android:text="@string/strAtras" />
+
+        <Button
+            android:id="@+id/buttonAGlobalLucesSalir"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaLogin"
+            android:text="@string/strSalir" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

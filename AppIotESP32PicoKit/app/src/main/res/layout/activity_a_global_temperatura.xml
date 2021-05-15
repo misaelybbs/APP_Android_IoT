@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondomorado"
+    tools:context=".AGlobalHumedad">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutAGlobalAcciones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutAGlobalAcciones"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_style"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/textViewAGlobalAccionesTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Corazon"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewAGlobalAccionesUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewAGlobalAccionesTitulo"
+                android:layout_marginTop="6dp"
+                android:text="@string/strUsuario"
+                android:textColor="@color/colorNegro"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageViewAGlobalAcciones"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/user"
+                android:contentDescription="TODO" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewAAccionesTituloAGlobalAcciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="Datos"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+
+        <WebView
+            android:id="@+id/webViewAGlobalAccionesTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:backgroundTint="#D9C1FD"
+            android:background="#D9C1FD"
+            android:isScrollContainer="false"
+            android:visibility="visible"
+            tools:visibility="invisible" />
+
+        <Button
+            android:id="@+id/buttonAGlobalAccionesAtras"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaAPanelDeControl"
+            android:text="@string/strAtras" />
+
+        <Button
+            android:id="@+id/buttonAGlobalSalir"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaLogin"
+            android:text="@string/strSalir" />
+
+        <WebView
+            android:id="@+id/webViewAGlobalAcciones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="invisible" />
+
+    </LinearLayout>
+</ScrollView>

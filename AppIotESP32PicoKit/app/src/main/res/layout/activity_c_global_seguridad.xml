@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondomorado"
+    tools:context=".CGlobalSeguridad">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutCGlobal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCGlobalLuces"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_style"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/textViewCGlobal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strSeguridad"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCGlobalSeguridadUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewCGlobal"
+                android:layout_marginTop="6dp"
+                android:text="@string/strUsuario"
+                android:textColor="@color/colorNegro"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageViewCGlobalSeguridadUsuario"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/user" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewCGlobalTemperaturaControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/strControl_de_la_seguridad"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switchCGlobalSeguridadControlCerraduras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/strCerraduras"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switchCGlobalSeguridadControlCamaras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/strCamaras"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/switchCGlobalSeguridadControlAlarma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/strAlarma"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonCGlobalAtras"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaCGlobal"
+            android:text="@string/strAtras" />
+
+        <Button
+            android:id="@+id/buttonCGlobalSalir"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaLogin"
+            android:text="@string/strSalir" />
+
+        <WebView
+            android:id="@+id/webViewCGlobalSeguridad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="invisible"
+            tools:ignore="WebViewLayout" />
+
+
+    </LinearLayout>
+
+</ScrollView>

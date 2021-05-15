@@ -1,0 +1,168 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondomorado"
+    tools:context=".CBanio">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutCBanio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCBanio"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_style"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/textViewCBanio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strBanio"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCBanioUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewCBanio"
+                android:layout_marginTop="6dp"
+                android:text="@string/strUsuario"
+                android:textColor="@color/colorNegro"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageViewCBanioUsuario"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/user" />
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/gridLayoutCBanioMenuBanio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCBanioMenuLuces"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:onClick="pantallaCBanioLuces"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewCBanioMenuLuces"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/luces" />
+
+                    <TextView
+                        android:id="@+id/imageViewCBanioMenuBanioTxtLuces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/StrLuces"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                android:visibility="gone"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutCBanioMenuSeguridad"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewCBanioMenuSeguridad"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:visibility="gone"
+                        android:src="@drawable/gas" />
+
+                    <TextView
+                        android:id="@+id/imageViewCBanioTxtSeguridad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/strGas"
+                        android:textColor="#6f6f6f"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/buttonCBanioAtras"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaCPanelDeControl"
+            android:text="@string/strAtras" />
+
+        <Button
+            android:id="@+id/buttonCBanioSalir"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaLogin"
+            android:text="@string/strSalir" />
+
+    </LinearLayout>
+
+</ScrollView>

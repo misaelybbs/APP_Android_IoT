@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amse.tt_2019_b087.iot.app_iot_esp32_pico_kit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.amse.tt_2019_b087.iot.mail.Mail2"></activity>
+        <activity android:name=".AGlobalHumedad" />
+        <activity android:name=".CSalaSeguridad" />
+        <activity android:name=".RecuperarContrasenia" />
+        <activity android:name=".CGlobalLuces" />
+        <activity android:name=".PanelDeControl" />
+        <activity android:name=".AGlobalAcciones" />
+        <activity android:name=".AGlobalLuces" />
+        <activity android:name=".APanelDeControl" />
+        <activity android:name=".CRecamaraDispositivos" />
+        <activity android:name=".CRecamaraLuces" />
+        <activity android:name=".CSalaExterior" />
+        <activity android:name=".CSalaDispositivos" />
+        <activity android:name=".CSalaTemperatura" />
+        <activity android:name=".CSalaLuces" />
+        <activity android:name=".CCocinaSeguridad" />
+        <activity android:name=".CBanioLuces" />
+        <activity android:name=".CCosinaGas" />
+        <activity android:name=".CCosinaLuces" />
+        <activity android:name=".CGlobalExterior" />
+        <activity android:name=".CGlobalSeguridad" />
+        <activity android:name=".CRecamara" />
+        <activity android:name=".CSala" />
+        <activity android:name=".CBanio" />
+        <activity android:name=".CCosina" />
+        <activity android:name=".CGlobal" />
+        <activity android:name=".CPanelDeControl" />
+        <activity android:name=".Registrar" />
+        <activity android:name=".SPanelDeControl" />
+        <activity android:name=".STermometro" />
+        <activity android:name=".SCorazon" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

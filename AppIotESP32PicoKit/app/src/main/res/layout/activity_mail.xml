@@ -1,0 +1,129 @@
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/fondomorado"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context="com.amse.tt_2019_b087.iot.mail.Mail">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutRecuperarContrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutRecuperarContrasenia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/btn_style">
+
+                <TextView
+                    android:id="@+id/textViewRecuperarContrasenia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="@string/Recuperar_contrase_a"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewRecuperarContraseniaUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewRecuperarContrasenia"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/strUsuario"
+                    android:textColor="@color/colorNegro"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewRecuperarContraseniaUsuario"
+                    android:layout_width="62dp"
+                    android:layout_height="62dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/user" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewRecuperarContraseniaControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="Ingrese su correo electrónico para recuperar su contraseña"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/editTextRecuperarContraseniaUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="9"
+                android:background="@drawable/edt_style"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="@string/strUsuario"
+                android:inputType="textPersonName"
+                tools:ignore="Autofill" />
+
+            <EditText
+                android:id="@+id/editTextRecuperarContraseniaPassword"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="9"
+                android:background="@drawable/edt_style"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="@string/strPassword"
+                android:inputType="textPassword"
+                tools:ignore="Autofill" />
+
+
+            <EditText
+                android:id="@+id/txtRecuperarContraseniaCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="8"
+                android:autofillHints=""
+                android:background="@drawable/edt_style"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:hint="@string/strEmail"
+                android:inputType="textWebEmailAddress" />
+
+            <Button
+                android:id="@+id/buttonRecuperarContrasenia"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="10"
+                android:background="@drawable/btn_style"
+                android:onClick="pantallaLogin"
+                android:text="@string/Recuperar_contrase_a" />
+
+        </LinearLayout>
+    </ScrollView>

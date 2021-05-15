@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondomorado"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLoginLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:contentDescription="@string/todo"
+        tools:srcCompat="@drawable/titulo"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/editTextLoginUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="9"
+        android:background="@drawable/edt_style"
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="15dp"
+        android:ems="10"
+        android:hint="@string/strUsuario"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/editTextLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:layout_weight="9"
+        android:inputType="textPassword"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:drawableStart="@drawable/password"
+        android:drawablePadding="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edt_style"
+        android:hint="@string/strPassword"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/buttonLoginIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="10"
+        android:background="@drawable/btn_style"
+        android:onClick="pantallaPanelDeControl"
+        android:text="@string/strIngresar" />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:onClick="pantallaRegistrar"
+        android:text="@string/strRegistrar"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewRecuperarPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:gravity="center"
+        android:onClick="pantallaRecuperarContrasenia"
+        android:text="@string/strObtenerContraseña"
+        android:textSize="24sp" />
+</LinearLayout>

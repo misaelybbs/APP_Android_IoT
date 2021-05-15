@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondomorado"
+    tools:context=".CSalaTemperatura">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutCSalaTemperatura"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutCSalaTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/btn_style"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/textViewCSalaTemperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/strTemperatura_de_sala"
+                android:textColor="@color/colorNegro"
+                android:textSize="22sp"
+                android:layout_marginStart="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCSalaTemperaturaUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewCSalaTemperatura"
+                android:layout_marginTop="6dp"
+                android:text="@string/strUsuario"
+                android:textColor="@color/colorNegro"
+                android:layout_marginStart="5dp"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/imageViewCSalaTemperaturaUsuario"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/user" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textViewCSalaTemperaturaControl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:text="@string/strTemperatura"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <WebView
+            android:id="@+id/webViewCSalaTemperatura"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:backgroundTint="#D9C1FD"
+            android:background="#D9C1FD"
+            android:isScrollContainer="false"
+            android:visibility="visible"
+            tools:visibility="invisible" />
+
+
+        <Button
+            android:id="@+id/buttonCSalaTeperaturaAtras"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaCSala"
+            android:text="@string/strAtras" />
+
+        <Button
+            android:id="@+id/buttonCSalaTemperaturaSalir"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="8"
+            android:background="@drawable/btn_style"
+            android:onClick="pantallaLogin"
+            android:text="@string/strSalir" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">App IoT ESP32 Pico Kit</string>
+    <string name="strUsuario">Usuario</string>
+    <string name="strEmail">e-mail</string>
+    <string name="strPassword">Contraseña</string>
+    <string name="strIngresar">Ingresar</string>
+    <string name="strCancelar">Cancelar</string>
+    <string name="strRegistrar">Registrar</string>
+    <string name="strRegistrarCon">Registrar con</string>
+    <string name="strObtenerContraseña">Recuperar Contraseña</string>
+    <string name="strAgricultura">Agricultura</string>
+    <string name="strHogar">Hogar</string>
+    <string name="strSalir">Salir</string>
+    <string name="strAgriculturaHogar">Ambas</string>
+    <string name="strSeleccione_el_tipo_de_proyecto">Seleccione el tipo de Proyecto</string>
+    <string name="todo">TODO</string>
+    <string name="strPanel_de_control">Panel de Control</string>
+    <string name="StrLuces">Luces</string>
+    <string name="strGlobal">Global</string>
+    <string name="strSeguridad">Seguridad</string>
+    <string name="strSala">Sala</string>
+    <string name="strRecamara">Recamara</string>
+    <string name="strAtras">Atras</string>
+    <string name="strControl_de_luces">Control de Luces</string>
+    <string name="strTemperatura_ideal">Temperatura Ideal</string>
+    <string name="strTemperatura">Temperatura</string>
+    <string name="strHumedad">Humedad</string>
+    <string name="strControl_de_temperatura">Control de Temperatura</string>
+    <string name="strIntroduzca_una_temperatura_ideal">Introduzca una temperatura ideal</string>
+    <string name="strCerraduras">Cerraduras</string>
+    <string name="strCamaras">Camaras</string>
+    <string name="strAlarma">Alarma</string>
+    <string name="strControl_del_exterior">Control del Exterior</string>
+    <string name="strControl_de_gas">Control de Gas</string>
+    <string name="strBanio">Baño</string>
+    <string name="strCosina">Cocina</string>
+    <string name="strGas">Gas</string>
+    <string name="strExterior">Exterior</string>
+    <string name="strControl_de_la_seguridad">Control de la seguridad</string>
+    <string name="strGas_de_Banio">Gas de Baño</string>
+    <string name="strGas_de_cosina">Gas de cocina</string>
+    <string name="strLuces_de_banio">Luces de Baño</string>
+    <string name="strLuces_de_cosina">Luces de Cocina</string>
+    <string name="strLuces_de_recamara">Luces de Recamara</string>
+    <string name="strDispositivos">Dispositivos</string>
+    <string name="strControl_de_dispositivos">Control de Dispositivos</string>
+    <string name="strAudio">Audio</string>
+    <string name="strPantalla">Pantalla</string>
+    <string name="strLuces_de_la_sala">Luces de la sala</string>
+    <string name="strDispositivos_de_recamara">Dispositivos de recamara</string>
+    <string name="strHumedad_exterior">Humedad Exterior</string>
+    <string name="strHumedad_de_tierra">Humedad de tierra</string>
+    <string name="strControl_de_acciones">Control de Acciones</string>
+    <string name="strTejado">Tejado</string>
+    <string name="strRiego">Riego</string>
+    <string name="strCasa">Casa</string>
+    <string name="strInicio">Inicio</string>
+    <string name="strAcciones">Acciones</string>
+    <string name="strTemperatura_de_cultivo">Temperatura de cultivo</string>
+    <string name="strHumedad_del_cultivo">Humedad del cultivo</string>
+    <string name="strDispositivos_de_sala">Dispositivos de Sala</string>
+    <string name="strTemperatura_de_sala">Temperatura de Sala</string>
+    <string name="strNickname">Nickname</string>
+    <string name="luces_de_cultivo">Luces de cultivo</string>
+    <string name="luces_a">Luces A</string>
+    <string name="luces_b">Luces B</string>
+    <string name="luces_del_exterior">Luces del exterior</string>
+    <string name="luces_del_interior">Luces del interior</string>
+    <string name="Sensor_de_fuego">Sensor de Fuego</string>
+    <string name="Salud">Salud</string>
+    <string name="title_activity_s_panel_de_control">SPanelDeControl</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="Panel_de_control_agricultura">Panel de control Agricultura</string>
+    <string name="Panel_de_control">Panel de control</string>
+    <string name="Corazon">Corazón</string>
+    <string name="Temperatura_corporal">Temperatura Corporal</string>
+    <string name="Termometro">Termometro</string>
+    <string name="Pulso">Pulso</string>
+    <string name="Ventilador">Ventilador</string>
+    <string name="Alarma_de_incendio">Alarma de incendio</string>
+    <string name="Recuperar_contrase_a">Recuperar Contraseña</string>
+
+</resources>
